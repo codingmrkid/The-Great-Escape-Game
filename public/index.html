@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Great Escape</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="login">
+    <input id="name" placeholder="Enter name">
+    <select id="team">
+      <option value="orange">Orange</option>
+      <option value="red">Red</option>
+    </select>
+    <button id="joinBtn">Join Game</button>
+  </div>
+
+  <div id="game" style="display:none;">
+    <button id="rollBtn">Roll Dice</button>
+    <div id="chat">
+      <input id="chatInput" placeholder="Chat...">
+      <button id="sendChat">Send</button>
+      <div id="chatLog"></div>
+    </div>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>
